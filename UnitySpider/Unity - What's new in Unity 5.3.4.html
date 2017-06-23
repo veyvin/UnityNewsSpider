@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="The Unity 5.3.4 public release brings you a few improvements and a large number of fixes. There are some changes as well. Read the release notes below for details. For more information about the previous main release, see the [Unity 5.3 Release Notes](http://unity3d.com/unity/whats-new/unity-5.3)." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://unity3d.com/unity/whats-new/unity-5.3.4" />
+<meta property="og:site_name" content="Unity" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://unity3d.com/unity/whats-new/unity-5.3.4" />
+<meta property="og:title" content="Unity - Unity 5.3.4" />
+<meta property="og:description" content="Unity is the ultimate game development platform. Use Unity to build high-quality 3D and 2D games, deploy them across mobile, desktop, VR/AR, consoles or the Web, and connect with loyal and enthusiastic players and customers." />
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@unity3d" />
+<meta name="twitter:description" content="Unity is the ultimate game development platform. Use Unity to build high-quality 3D and 2D games, deploy them across mobile, desktop, VR/AR, consoles or the Web, and connect with loyal and enthusiastic players and customers." />
+    <link rel="alternate" hreflang="zh-hans" href="https://unity3d.com/cn/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="fr" href="https://unity3d.com/fr/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="de" href="https://unity3d.com/de/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="ja" href="https://unity3d.com/jp/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="ko" href="https://unity3d.com/kr/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="pt" href="https://unity3d.com/pt/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="ru" href="https://unity3d.com/ru/unity/whats-new/unity-5.3.4" />
+    <link rel="alternate" hreflang="es" href="https://unity3d.com/es/unity/whats-new/unity-5.3.4" />
+  <title>Unity - What's new in Unity 5.3.4</title>
+  <link rel="shortcut icon" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/apple-touch-icon-72x72.png"/ >
+  <link rel="apple-touch-icon-precomposed" href="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/apple-touch-icon.png" />
+  <meta name="msapplication-TileColor" content="#002835">
+  <meta name="msapplication-TileImage" content="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/favicons/tileicon-144x144.png">
+    <link type="text/css" rel="stylesheet" href="https://unity3d.com/sites/default/files/css/css_qRgJrRVX3K9pvBRfP6TO-deaPX9ArmLET3vVzRwUMYQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://unity3d.com/sites/default/files/css/css_Ijii_GD5j5AGAMxG616MLU99fkje6JiAaTFvhF5xBFw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://unity3d.com/sites/default/files/css/css_zvynf9TIJzaR-b3Ms20cC614J2KFhnRRJghN6T3Ehx4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://unity3d.com/sites/default/files/css/css_0m8jSEYQH4erIrtpMlxVhyLGs3-yh6_C1g24-a-toE8.css" media="all" />
+  <script type="text/javascript" src="https://unity3d.com/sites/default/files/js/js_jDwGs6ZjjAQLA8vvgPom1bS8OcNT0oPa7TYGo-gC5vY.js"></script>
+<script type="text/javascript" src="https://unity3d.com/sites/default/files/js/js_kVShO40s8DPIerIk5x_iiHidWaQsBqK4d_-Wx-xbkME.js"></script>
+<script type="text/javascript" src="https://unity3d.com/sites/default/files/js/js_nyhFcJIcipM9xL2mFfgGVlVftGM7NWKbVfBMtP6_S_Y.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"unity","theme_token":"FnN3tgrzEuTYAMhAoLB-MYvFQY242UIYFEKJqjLLnZA","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/unity3d\/themes\/unity\/js\/define-jquery.js":1,"profiles\/unity3d\/themes\/unity\/js\/plugins\/jquery.cookie.js":1,"profiles\/unity3d\/themes\/unity\/js\/plugins\/jquery.easing.1.3.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/jquery.slick.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-modernizr.min.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-bootstrap.select.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-core.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-core-legacy.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-fancybox.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-ui.js":1,"profiles\/unity3d\/themes\/unity\/js\/unity\/unity-marketing-ui.js":1,"profiles\/unity3d\/themes\/unity\/js\/plugins\/ckeditor-dialog.js":1,"profiles\/unity3d\/themes\/unity\/js\/plugins\/jquery.background.slider.js":1,"profiles\/unity3d\/themes\/unity\/js\/plugins\/jquery.assets.js":1,"profiles\/unity3d\/themes\/unity\/js\/lib\/unity.releases.js":1},"css":{"profiles\/unity3d\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/unity3d\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/search\/search.css":1,"profiles\/unity3d\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-reset.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-entypo-plus.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-typo.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-form.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-buttons.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-ui.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-grid.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-search.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-core.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-marketing.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-marketing-ui.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-marketing-plugins.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-legacy.css":1,"profiles\/unity3d\/themes\/unity\/css\/unity\/unity-helpers.css":1,"profiles\/unity3d\/themes\/unity\/css\/print.css":1,"profiles\/unity3d\/themes\/unity\/css\/lib\/unity.css":1}},"unityRegisterDownload":{"registerUrl":"https:\/\/activation.unity3d.com\/register_download.fcgi","data":{"host":"https:\/\/unity3d.com"}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script type="text/javascript" src="/profiles/unity3d/themes/unity/js/unity/unity-html5shiv.min.js"></script><![endif]-->
+    <!-- Google Tag Manager (unity: unity3d.com) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N93PFG');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-30128 node-type-unity-release i18n-en context-unity">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N93PFG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="master-wrapper" class="clear">
+        <div class="page clearfix" id="page">
+      <header id="main-header" class="main-header clear has-submenu">
+  <div class="wrap clear no-userinfo">
+          <a href="/" class="unity-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 29.18">
+          <path class="unity-logo--light" d="M27.58 15l1.77-3.07L26.27.41 14.76 3.49 13 6.58H9.42L1 15l8.42 8.42H13l1.77 3.07 11.51 3.08 3.08-11.51zM13.27 7.06l8.89-2.38L17 13.57H6.76zm0 15.87l-6.51-6.5H17l5.13 8.89zm11.36 1L19.5 15l5.13-8.89L27 15zM45.77 9.37h-2.82v6.34c0 1.67-.68 3-2.69 3s-2.56-1.35-2.56-3.08V9.37h-2.83v7c0 2.05.65 5 4.5 5a3.56 3.56 0 0 0 3.58-1.92v1.68h2.83zM46.78 21.09h2.83V14.5c0-1.64.7-3 2.69-3s2.56 1.35 2.56 3.1v6.48h2.83V13.9c0-2.07-.7-5-4.52-5a3.83 3.83 0 0 0-3.64 2V9.41h-2.75zM58.7 7.76h2.83V5.33H58.7zm0 13.33h2.83V9.37H58.7zM64.36 21.09h2.83v-9.7h2l-.83-2h-1.17v-4h-2.83v4h-2v2h2zM71.84 25.13h3L81 9.37h-3l-2.82 7.79-2.85-7.79h-3l4.42 11.24z" transform="translate(-1 -.41)"/>
+        </svg>
+      </a>
+      <div class="main-navigation clear">
+        <ul class="main-menu"><li class="menu-357 first"><a href="/" title="">Home</a></li><li class="menu-363 active-trail"><a href="/unity" class="active-trail">Unity</a></li><li class="menu-2990"><a href="/services">Services</a></li><li class="menu-642"><a href="/showcase" title="">Made with Unity</a></li><li class="menu-398"><a href="/learn">Learn</a></li><li class="menu-367"><a href="/community">Community</a></li><li class="menu-366"><a href="/asset-store" title="">Asset Store</a></li><li class="menu-2984 last"><a href="/get-unity" title="">Get Unity</a></li></ul>      </div>
+      <div class="main-tools">
+        <a class="tool tool-menu toggle-panel" data-panel="mobile-navigation">
+          <div class="icon"></div>
+        </a>
+        <a class="tool tool-search toggle-panel" data-panel="search-panel">
+          <div class="icon"></div>
+        </a>
+        <a class="tool user-icon toggle-panel" data-panel="user-panel">
+                    <img src="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/icons/other/user-default-light64x64.png" class="avatar" />
+                  </a>
+      </div>
+              <nav class="sub-nav">
+        <div class="wrap">
+          <ul class="secondary-menu"><li class="menu-2987 first"><a href="/unity/editor">Editor</a></li><li class="menu-373"><a href="/unity/multiplatform">Multiplatform</a></li><li class="menu-41162"><a href="/unity/roadmap" title="">Roadmap</a></li><li class="menu-54389 last"><a href="/unity/demos">Demos</a></li></ul>          <script> var submore = 'More'; </script>
+        </div>
+      </nav>
+      </div>
+</header>
+
+<div id="search-panel" class="header-panel search-panel clear">
+  <div class="panel-content clear">
+    <h4>Search Unity</h4>
+    <script>
+    var blank = 'https://unity3d.com/profiles/unity3d/themes/unity/images/ui/other/blank100.gif';
+    (function() {
+      var cx = '002645370080425984202:i_d7wpkpdzy';
+      var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+    })();
+    </script>
+    <div class="search-box"><gcse:search></gcse:search></div>
+  </div>
+</div>
+
+<div id="user-panel" class="header-panel user-panel clear">
+  <div class="panel-content clear txt-c">
+        <div class="sign-in">
+      <img src="https://unity3d.com/profiles/unity3d/themes/unity/images/ui/icons/other/user-default128x128.png" class="avatar" />
+      <h2>Unity ID</h2>
+      <p class="mb30">A Unity ID allows you to buy and/or subscribe to Unity products and services, shop in the Asset Store and participate in the Unity community.</p>
+            <a href="/user/login?return=unity/whats-new/unity-5.3.4" class="btn bg-gr center mr15 mb10 js-cms-oauth-login-url">Log in</a>
+            <a href="https://id.unity.com/account/new" class="btn bg-mg center outlined mb10">Create a Unity ID</a>
+    </div>
+      </div>
+</div>
+
+<div id="panel-overlay" class="panel-overlay toggle-panel" data-panel="overlay"></div>
+<div id="alert-overlay" class="alert-overlay close-alert"></div>
+<div id="mobile-navigation" class="header-panel mobile-navigation clear">
+  <div class="panel-content clear">
+    <div class="mb30 bb clear">
+          <ul>
+                        <li><a href="/">Home</a></li>
+                                <li>
+            <a href="/unity" class="active-trail">Unity</a>
+            <ul class="secondary-menu"><li class="menu-2987 first"><a href="/unity/editor">Editor</a></li><li class="menu-373"><a href="/unity/multiplatform">Multiplatform</a></li><li class="menu-41162"><a href="/unity/roadmap" title="">Roadmap</a></li><li class="menu-54389 last"><a href="/unity/demos">Demos</a></li></ul>          </li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/showcase">Made with Unity</a></li>
+                                <li><a href="/learn">Learn</a></li>
+                                <li><a href="/community">Community</a></li>
+                                <li><a href="/asset-store">Asset Store</a></li>
+                                <li><a href="/get-unity">Get Unity</a></li>
+                    </ul>
+        </div>
+    <div class="lang clear">
+      <p class="b c-db">Language</p>
+      <div class="language-switcher">
+  <ul id="mobile-lang" class="languages">
+              <li><a href="/cn/unity/whats-new/unity-5.3.4" data-lang="cn" lang="zh-hans" hreflang="zh-hans">中文</a></li>
+                <li><a href="/fr/unity/whats-new/unity-5.3.4" data-lang="fr" lang="fr" hreflang="fr">Français</a></li>
+                <li><a href="/de/unity/whats-new/unity-5.3.4" data-lang="de" lang="de" hreflang="de">Deutsch</a></li>
+                <li><a href="/jp/unity/whats-new/unity-5.3.4" data-lang="jp" lang="ja" hreflang="ja">日本語</a></li>
+                <li><a href="/kr/unity/whats-new/unity-5.3.4" data-lang="kr" lang="ko" hreflang="ko">한국어</a></li>
+                <li><a href="/pt/unity/whats-new/unity-5.3.4" data-lang="pt" lang="pt" hreflang="pt">Português</a></li>
+                <li><a href="/ru/unity/whats-new/unity-5.3.4" data-lang="ru" lang="ru" hreflang="ru">Русский</a></li>
+                <li><a href="/es/unity/whats-new/unity-5.3.4" data-lang="es" lang="es" hreflang="es">Español</a></li>
+      </ul>
+</div>    </div>
+      </div>
+</div>
+    
+      <section id="section-content" class="section section-content">
+  <div class="background"></div>
+
+<section id="main-wrapper" class="main-wrapper clear">
+    <div class="hero clear"></div>
+      <div class="main-content clear">
+    <div id="content-wrapper" class="content-wrapper clear">
+                  
+<div class="g12 nest full-release rel">
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 5.3.4</h1>
+        <p>The Unity 5.3.4 public release brings you a few improvements and a large number of fixes. There are some changes as well. Read the release notes below for details.</p>
+
+<p>For more information about the previous main release, see the <a href="/unity/whats-new/unity-5.3">Unity 5.3 Release Notes</a>.</p>        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="/get-unity">Get it now!</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h3>Improvements</h3>
+
+<ul>
+<li>Android: Audio; don't select OpenSL output if the native device params are too bad for fast path (fixes audio issues on some buggy devices).</li>
+<li>Android: Buildpipe; updated SDK tools requirements for the Editor.</li>
+<li>Android: Editor; added Marshmallow to the list of APIs.</li>
+<li>Android: IL2CPP; use Android NDK x64 on x64 Windows Editor.</li>
+<li>Android: Soft Input; get rid of hardcoded text color, switch to Light theme.</li>
+<li>Editor: Added warning dialog if there is any version difference between editor and last project save.</li>
+<li>Metal: Add -force-metal switch to force Metal rendering on OSX/iOS.</li>
+<li>OpenGL Core: A whole bunch of fixes, particularly on Macs. See Fixes list below.</li>
+<li>Scripting: introduced global define UNITY_5_3_OR_NEWER, which can be used for conditionally compile code that is compatible only with Unity 5.3 or newer.</li>
+<li>Win / OSX Standalone: Add -hideWindow command line option to launch standalone applications with the window hidden.</li>
+<li>Windows: Added a new command line argument for standalone builds: -window-mode. Options: borderless, exclusive. It lets users override the default fullscreen window behavior.</li>
+</ul>
+
+<h3>Fixes</h3>
+
+<ul>
+<li>2D: Changing Rigidbody2D.gravityScale while a Rigidbody2D.MovePosition is in progress now works. (762771) </li>
+<li>2D: Ensure Joint2D auto-configuration still works if joint is added from script (765870) </li>
+<li>2D: Ensure that a TargetJoint2D added via script allows collisions with static colliders. (763922) </li>
+<li>2D: Stop Rigidbody2D with Interpolation being placed at world origin for a single update upon start. (764769) </li>
+<li>Analytics: Fixed unreliable event sending (especially AppStart) on WebGL. (770316) </li>
+<li>Android: Added support for Vivante OpenGL ES 3 driver. (738821, 758155) </li>
+<li>Android: Fixed alignment crash on some Android ARM devices. (768974) </li>
+<li>Android: Fixed an issue where Ping wouldn't work in release mode. (734124) </li>
+<li>Android: Fixed black screen or crash during startup on old PVR devices (Samsung Galaxy S I9000). (762875) </li>
+<li>Android: Fixed bug in Texture.GetPixels for ETC compressed textures. (759195) </li>
+<li>Android: Fixed rendering artifacts when using native plugins and multithreaded renderer. (772171) </li>
+<li>Android: Fixed rendering on Vivante GPUs on Android 4.3 and older. (712890, 771890) </li>
+<li>Android: IL2CPP; fixed build errors on NDK paths with whitespaces. (763447) </li>
+<li>Android: IL2CPP; fixed crash on second startup after installation. (766698) </li>
+<li>Android/IL2CPP; prevent a crash in the garbage collector when it attempts to scan a section of memory used for the code that may have been unmapped by the OS. (755201) </li>
+<li>Animation: Fixed a crash when animating lights using the legacy Animation component. (772260) </li>
+<li>Animation: Prevent crashes when clips are null for animations extracted from asset bundles whose dependencies have not loaded. (756463) </li>
+<li>API Updater: Fixed "Sequence contains more than one matching element" crash. (760684) </li>
+<li>API Updater: Fixed crash upon assembly resolution failures. (743463) </li>
+<li>Asset Bundles: Only reimport when setting asset bundle name if cache server is connected. (714661) </li>
+<li>AssetBundles: BuildAssetBundles will switch back to the original active build target when finished. (759142) </li>
+<li>Audio: Disabled sound manager watch dog. (774356) </li>
+<li>Core: Fixed an issue asynchronously loading a prefab with a large amount of assets. (771882) </li>
+<li>Core: Fixed some errors with recently deleted objects (in WWWDelayCall; ClearPersistentDirty call; editor CEF integration).</li>
+<li>Editor: Don't call OnLevelWasLoaded on the first scene when entering play mode. (759231) </li>
+<li>Editor: Fix for clustering allocation while navigating. (747856) </li>
+<li>Editor: Fixed a crash when selecting some prefabs. (766469) </li>
+<li>Editor: Fixed an issue that made GameObjects disappear from the Editor if they have an associated editor script that made use of DontDestroyOnLoad. (754127) </li>
+<li>Editor: Fixed an issue when opening a scene from the Project Browser while in playmode it resulted in that scene being loaded even after going out of playmode. (767728) </li>
+<li>Editor: Fixed misleading texture decompression warning in graphics emulation. (760112) </li>
+<li>Editor: Fixed startup when Unity is in a path with non-ASCII characters. (765159) </li>
+<li>Editor: Fixed the issue of GUI.Windows background not being tinted by GUI.colors anymore. (756004) </li>
+<li>Editor: Fixed the issue of marking scene dirty when creating prefab by dragging from Hierarchy window to Project. (758409) </li>
+<li>Editor: Fixed the issue of marking the scene dirty when pressing the apply button on a prefab instance. (757027) </li>
+<li>Global Illumination: Fixed crash in some scene loading scenarios. (768849) </li>
+<li>Global Illumination: Fixed crash when building lighting with a specific scene setup. (767222) </li>
+<li>Global Illumination: Fixed light probes not being used anymore in Standalone when a scene without light probes was loaded with Additive mode. (767161) </li>
+<li>Global Illumination: Fixed multi-scene baking. (751599) </li>
+<li>Global Illumination: Fully repaint inspectors after baking reflection probes; some previews were not updating before. (663992) </li>
+<li>Global Illumination: When compositing the directional lightmap removed the clamping on the w-component of the generated pixels.</li>
+<li>Graphics: Added profiler markers on async texture loading waits. </li>
+<li>Graphics: Fixed .ogv movie files with stream markers beyond 16kb not imported correctly. (772013) </li>
+<li>Graphics: Fixed "Trying to reload asset from disk that is not stored on disk" error when non-persistent objects are attempted to be reloaded from disk. (752613) </li>
+<li>Graphics: Fixed a synchronization problem that was causing texture data not to be properly updated when changing quality settings at runtime. (752613) </li>
+<li>Graphics: Fixed an issue where GrabPass could get source texture wrongly offset in some cases. (75508, 726067) </li>
+<li>Graphics: Fixed an issue where setting a material's shader to null would crash the editor. (771292) </li>
+<li>Graphics: Fixed an issue where TrailRenderer would randomly vanish/flicker. (740580)</li>
+<li>Graphics: Fixed crash in SetGpuProgramName which could happen when the program isn't supported by the target graphics hardware (found on Android) . (772958) </li>
+<li>Graphics: Fixed GenerateSecondaryUVs crashes on some meshes.</li>
+<li>Graphics: Fixed MovieTextures sometimes being black in Mac Standalone (64 or Universal builds). (765928) </li>
+<li>Graphics: Prevent Projectors from accepting invalid clip planes from a script. (506089, 535548) </li>
+<li>Graphics/DX11: Fixed compute shader resource hazards found in certain cases when binding the same resource SRV and UAV on pixel and compute shader stages. (542251) </li>
+<li>IL2CPP: Avoid crash when constructing error message. (770081) </li>
+<li>IL2CPP: Correctly sort unsigned integers via the Array.Sort method. (774085) </li>
+<li>IL2CPP: Prevent generated C++ code from failing to compile with errors like "error: use of undeclared identifier 'L_5'" in some cases. (773713, 768010) </li>
+<li>IL2CPP: Properly marshal formatted classes (762883, 746313) </li>
+<li>IL2CPP: Properly parse binary text assets. (771835) </li>
+<li>iOS Metal: Fixed performance regression when doing in-frame clear (GL.Clear or command buffer Clear). (775362) </li>
+<li>iOS: Fixed redirect for WWW. (723960) </li>
+<li>Linux: Fixed MSAA in non-upscaled windows, force window recreation when requirements change for player window attributes. </li>
+<li>Linux/GLCore: Fixed one more instance of render. (775575) </li>
+<li>Mecanim: Fixed an issue with Animation clip length for bundled clip. (753888) </li>
+<li>Mecanim: Fixed AnimationClip.SampleAnimation memory leak. (760612) </li>
+<li>Mecanim: Fixed Animator with statemachine behaviour runtime compile error not firing callback on the right SMB. (756129) </li>
+<li>Mecanim: Fixed assert when using Animator.MatchTarget.</li>
+<li>Mecanim: Fixed long start play mode for scene with lots of controller. (769964) </li>
+<li>Mecanim: Fixed StateMachineBehaviours on layer not being called properly. (765141) </li>
+<li>Mono: Added IPv6 support on Windows. (767741) </li>
+<li>Networking: Fixed a crash due to wrong initialization of connection. </li>
+<li>Networking: Fixed an issue where ack didn't reset with connection resetting which lead to reliable traffic stale. (775226) </li>
+<li>Networking: Removed annoying "Attempt to send to not connected connection" message. (775222) </li>
+<li>Networking: Removing "no free events for message" as annoying. (775225) </li>
+<li>Networking: Send Error: val &gt; 0 on user disconnect, results in memory write violation and editor crash. (754510) </li>
+<li>OpenGL Core: Fixed twitching and incorrect rendering with skinning and UI components on GLCore + Mac + NVIDIA. (773476, 775275, 767857, 766778) </li>
+<li>OpenGL Core: Fixed fullscreen mode when not using native resolution and using MSAA on Mac AMD GPUs. (775428, 776470) </li>
+<li>OpenGL Core: Fixed fullscreen MSAA support with linear color space rendering. (774558, 774216) </li>
+<li>OpenGL Core: Fixed Graphics API switching to OpenGL. (762687) </li>
+<li>OpenGL Core: Fixed occasional game view flipping with image effects in the editor. (760196)</li>
+<li>OpenGL Core: Fixed dynamic geometry performance issues on Mac + NVIDIA.  </li>
+<li>OpenGL Core: Fixed stretched game view with some image effects in Mac editor. (757536, 757866)</li>
+<li>OpenGL Core: Workaround for Nvidia shader compiler bug on OS X, affecting SSAO shader. (756028)</li>
+<li>OpenGL Core/ES: Fixed scalar uniform handling in the shader translator. (772167) </li>
+<li>OpenGL Core/ES: Fixed wrong shader code generation when redirecting variables, was affecting FastBloom shader. (772434) </li>
+<li>OpenGL Core/ES: Shader compiler, fixed invalid uniform access in certain corner cases. (767343) </li>
+<li>OpenGL ES: Fixed non-shadowmap depth textures on some devices. (768916) </li>
+<li>OpenGL: Fixed point size support using GLSL PROGRAM snippets. (763875) </li>
+<li>Particles: Fixed a culling regression, when particle systems leave the screen and come back. (773673) </li>
+<li>Particles: Fixed error message due to default bounding box. (767419) </li>
+<li>Physics: Fixed a PhysX crash issue in PxsCCDContext::updateCCD experienced by some VR applications. 
+(776187) </li>
+<li>Profiler: Fixed crash when adding data from thread which was started during a frame. (758264) </li>
+<li>Profiler: Fixed hang when EndSample did not have a matching BeginSample. (770225) </li>
+<li>Shaders: Added support to the compute shader compiler to handle bools inside structures. </li>
+<li>Shaders: Fixed Standard shader in some rare cases outputing NaN as pixel shader result. (766806) </li>
+<li>Shadows: Fixed shadows disappearing for some off-screen shadows casters. (761152) </li>
+<li>Substance: All inputs are now applied to a ProceduralMaterial on the first RebuildTextures() call after the material's textures have been read from cache. Previously, only the modified inputs were applied. </li>
+<li>Substance: Fixed Editor freeze upon instantiation of resource. (771650) </li>
+<li>Substance: Fixed broken detection and assignment of shader keywords resulting in wrong appearance of ProceduralMaterials in scenes when the ProceduralMaterial was not opened in the Inspector (some shader keywords were enabled when they should not). </li>
+<li>Substance: Fixed cache hashing and management issue which could cause the cache to be considered valid again after having been invalidated (often seen after calling Resources.UnloadUnusedAssets()). </li>
+<li>Substance: Fixed loading of files with special characters in their paths or names. </li>
+<li>Substance: Fixed rare crash caused by using the wrong size when uploading ProceduralTextures. </li>
+<li>Substance: Fixed upgrading UNITY 4.x project data, legacy shaders should now be used for these old projects instead of being incorrectly replaced by the Standard shader. (765510) </li>
+<li>Tizen: Fixed error about copying whitelists while building on Windows. (773614) </li>
+<li>UI: Fixed exceptions upon assembly/type resolution failures. (770048) </li>
+<li>UI: Fixed memory leak where dirty renderers on a disabled canvas would still get added to the dirty list causing crashes on clear. (773533) </li>
+<li>UI: Fixed sorting issue where gird based depth sorting would fail to recognize overlapping unbatchable items. (770804) </li>
+<li>UI: Stopped raycast from traversing up the hierarchy when a canvas with override sorting is encountered. </li>
+<li>UI: Vertical alignment of text sometimes appearing higher than expected. (760753) </li>
+<li>Unity Ads: Updated to 1.5.6 version (fixes crash on Android 4.1 and earlier).</li>
+<li>VR: Restart the VR Device if the Oculus Service fails. </li>
+<li>Wii U: Fixed a crash on secondary error confirmation. (767206) </li>
+<li>Windows Store: Fixed exported VS project failing to build for non-x86 CPU when there is a managed assembly in the project that's been compiled for x86. (770931) </li>
+<li>Windows Store/IL2CPP: Fixed game crashing when its name is exactly 20 characters long. (769835) </li>
+<li>Windows Store/IL2CPP: Fixed intellisense in generated Il2CppOutputProject to be able to correctly resolve Windows 10 headers. (771765) </li>
+<li>Windows Store/IL2CPP: Fixed failing to build on top of a previous build when target directory is read-only. (766764) </li>
+<li>Windows Store/IL2CPP: Graphics plugins now work. (770941) </li>
+<li>Windows Store/IL2CPP: Reduced the amount of linker warnings when building.</li>
+<li>Windows: Fixed Application.persistentDataPath when Product Name contains invalid path character. (756152) </li>
+<li>Windows: Fixed unnecessary symbols exported for Windows Standalone Player executable. This was making some Nvidia drivers wrongly pick up integrated GPU instead of discrete one on some systems. </li>
+<li>XBoxOne/IL2CPP: Allow a call to Guid.NewGuid to work correctly. (769711) </li>
+</ul>
+
+<h3>Known Issues</h3>
+
+<ul>
+<li>Windows Store: Build might fail when Visual Assets (tiles, store icons, etc.) are set in player settings. Workaround is to leave them empty and fill in Visual Studio.</li>
+</ul>
+
+<p>Revision: fdbb5133b820</p>      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-5.3.3"></a></span>
+  <div class="tip">Unity 5.3.3</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-5.3.5"></a></span>
+  <div class="tip">Unity 5.3.5</div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="g3 right">
+    <div class="g12 bg-lg">
+      <div class="clear bb pb30 mb15">
+        <div class="select-box rel">
+          <div class="trigger">Unity 5.3.4</div>
+          <ul class="options">
+                        <li><a href="/unity/whats-new/unity-5.6.2">Unity 5.6.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.6.1">Unity 5.6.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.6.0">Unity 5.6</a></li>
+                        <li><a href="/unity/whats-new/unity-5.5.4">Unity 5.5.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.5.3">Unity 5.5.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.5.2">Unity 5.5.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.5.1">Unity 5.5.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.5.0">Unity 5.5</a></li>
+                        <li><a href="/unity/whats-new/unity-5.4.5">Unity 5.4.5</a></li>
+                        <li><a href="/unity/whats-new/unity-5.4.4">Unity 5.4.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.4.3">Unity 5.4.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.4.2">Unity 5.4.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.4.1">Unity 5.4.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.4.0">Unity 5.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.8">Unity 5.3.8</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.7">Unity 5.3.7</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.6">Unity 5.3.6</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.5">Unity 5.3.5</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.4">Unity 5.3.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.3">Unity 5.3.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.2">Unity 5.3.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3.1">Unity 5.3.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.3">Unity 5.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.2.5">Unity 5.2.5</a></li>
+                        <li><a href="/unity/whats-new/unity-5.2.4">Unity 5.2.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.2.3">Unity 5.2.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.2.2">Unity 5.2.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.2.1">Unity 5.2.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.2">Unity 5.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.1.5">Unity 5.1.5</a></li>
+                        <li><a href="/unity/whats-new/unity-5.1.4">Unity 5.1.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.1.3">Unity 5.1.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.1.2">Unity 5.1.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.1.1">Unity 5.1.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.1">Unity 5.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.0.4">Unity 5.0.4</a></li>
+                        <li><a href="/unity/whats-new/unity-5.0.3">Unity 5.0.3</a></li>
+                        <li><a href="/unity/whats-new/unity-5.0.2">Unity 5.0.2</a></li>
+                        <li><a href="/unity/whats-new/unity-5.0.1">Unity 5.0.1</a></li>
+                        <li><a href="/unity/whats-new/unity-5.0">Unity 5.0</a></li>
+                        <li><a href="/unity/whats-new/unity-4.7.2">Unity 4.7.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.7.1">Unity 4.7.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.7.0">Unity 4.7.0</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.9">Unity 4.6.9</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.8">Unity 4.6.8</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.7">Unity 4.6.7</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.6">Unity 4.6.6</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.5">Unity 4.6.5</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.4">Unity 4.6.4</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.3">Unity 4.6.3</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.2">Unity 4.6.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6.1">Unity 4.6.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.6">Unity 4.6</a></li>
+                        <li><a href="/unity/whats-new/unity-4.5.5">Unity 4.5.5</a></li>
+                        <li><a href="/unity/whats-new/unity-4.5.4">Unity 4.5.4</a></li>
+                        <li><a href="/unity/whats-new/unity-4.5.3">Unity 4.5.3</a></li>
+                        <li><a href="/unity/whats-new/unity-4.5.2">Unity 4.5.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.5.1">Unity 4.5.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.5">Unity 4.5</a></li>
+                        <li><a href="/unity/whats-new/unity-4.3.4">Unity 4.3.4</a></li>
+                        <li><a href="/unity/whats-new/unity-4.3.3">Unity 4.3.3</a></li>
+                        <li><a href="/unity/whats-new/unity-4.3.2">Unity 4.3.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.3.1">Unity 4.3.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.3">Unity 4.3</a></li>
+                        <li><a href="/unity/whats-new/unity-4.2.2">Unity 4.2.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.2.1">Unity 4.2.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.2">Unity 4.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.1.5">Unity 4.1.5</a></li>
+                        <li><a href="/unity/whats-new/unity-4.1.4">Unity 4.1.4</a></li>
+                        <li><a href="/unity/whats-new/unity-4.1.3">Unity 4.1.3</a></li>
+                        <li><a href="/unity/whats-new/unity-4.1.2">Unity 4.1.2</a></li>
+                        <li><a href="/unity/whats-new/unity-4.1">Unity 4.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.0.1">Unity 4.0.1</a></li>
+                        <li><a href="/unity/whats-new/unity-4.0">Unity 4.0</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.7">Unity 3.5.7</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.6">Unity 3.5.6</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.5">Unity 3.5.5</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.4">Unity 3.5.4</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.3">Unity 3.5.3</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.2">Unity 3.5.2</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5.1">Unity 3.5.1</a></li>
+                        <li><a href="/unity/whats-new/unity-3.5">Unity 3.5</a></li>
+                        <li><a href="/unity/whats-new/unity-3.4.2">Unity 3.4.2</a></li>
+                        <li><a href="/unity/whats-new/unity-3.4.1">Unity 3.4.1</a></li>
+                        <li><a href="/unity/whats-new/unity-3.4">Unity 3.4</a></li>
+                        <li><a href="/unity/whats-new/archive">Archive</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="whatsnew-menu whatsnew-anchor">
+        <h4 class="b mb10 pt15">Quick jump</h4>
+        <ul class="w100 notes-list"></ul>
+      </div>
+    </div>
+    <a class="btn s right bg-db back-to-top" href="#">Back to Top</a>  
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="wrapper clear gr-lg-rev">
+    <div class="gw clear">
+      <div class="g12 crumbs pb0">
+        <div class="rel">
+          <a href="/" class="unity-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 29.18">
+              <path class="unity-logo--dark" d="M27.58 15l1.77-3.07L26.27.41 14.76 3.49 13 6.58H9.42L1 15l8.42 8.42H13l1.77 3.07 11.51 3.08 3.08-11.51zM13.27 7.06l8.89-2.38L17 13.57H6.76zm0 15.87l-6.51-6.5H17l5.13 8.89zm11.36 1L19.5 15l5.13-8.89L27 15zM45.77 9.37h-2.82v6.34c0 1.67-.68 3-2.69 3s-2.56-1.35-2.56-3.08V9.37h-2.83v7c0 2.05.65 5 4.5 5a3.56 3.56 0 0 0 3.58-1.92v1.68h2.83zM46.78 21.09h2.83V14.5c0-1.64.7-3 2.69-3s2.56 1.35 2.56 3.1v6.48h2.83V13.9c0-2.07-.7-5-4.52-5a3.83 3.83 0 0 0-3.64 2V9.41h-2.75zM58.7 7.76h2.83V5.33H58.7zm0 13.33h2.83V9.37H58.7zM64.36 21.09h2.83v-9.7h2l-.83-2h-1.17v-4h-2.83v4h-2v2h2zM71.84 25.13h3L81 9.37h-3l-2.82 7.79-2.85-7.79h-3l4.42 11.24z" transform="translate(-1 -.41)"/>
+            </svg>
+          </a>
+          <a class="to-top"></a>
+        </div>
+      </div>
+      <div class="g8 nest group links">
+        <div class="g3">
+          <p class="lbl">Purchase</p>
+          <ul>
+            <li><a href="https://store.unity.com/">Subscription</a></li>
+            <li><a href="https://unity3d.com/asset-store">Asset Store</a></li>
+            <li><a href="https://store.unity.com/resellers">Resellers</a></li>
+          </ul>
+          <p class="lbl pt25">Education</p>
+          <ul>
+            <li><a href="https://store.unity.com/education#student">Students</a></li>
+            <li><a href="https://store.unity.com/education#educator">Educators</a></li>
+          </ul>
+        </div>
+        <div class="g3">
+          <p class="lbl">Download</p>
+          <ul>
+            <li><a href="https://unity3d.com/get-unity">Unity</a></li>
+            <li><a href="https://unity3d.com/webplayer">Web Player</a></li>
+                        <li><a href="https://unity3d.com/public-relations/downloads">Press material</a></li>
+            <li><a href="https://unity3d.com/whitepapers">Whitepapers</a></li>
+                      </ul>
+        </div>
+        <div class="g3">
+          <p class="lbl">Resources</p>
+          <ul>
+                        <li><a href="https://unity3d.com/learn">Learn</a></li>
+            <li><a href="https://unity3d.com/community">Community</a></li>
+            <li><a href="https://unity3d.com/learn/documentation">Documentation</a></li>
+            <li><a href="https://unity3d.com/unity/qa">Unity QA</a></li>
+            <li><a href="https://unity3d.com/unity/faq">FAQ</a></li>
+            <li><a href="http://status.cloud.unity3d.com/" target="_blank">Services Status</a></li>
+            <li><a href="https://certification.unity.com">Certification</a></li>
+            <li><a href="https://connect.unity.com/">Connect</a></li>
+						<li><a href="https://unity3d.com/user-research">User research</a></li>
+          </ul>
+        </div>
+        <div class="g3">
+          <p class="lbl">About Unity</p>
+          <ul>
+            <li><a href="https://unity3d.com/public-relations">Company facts</a></li>
+                        <li><a href="http://blogs.unity3d.com/">Blog</a></li>
+            <li><a href="https://unity3d.com/events">Events</a></li>
+                        <li><a href="https://careers.unity.com">Careers</a></li>
+                        <li><a href="https://unity3d.com/public-relations">Press</a></li>
+            <li><a href="https://unity3d.com/contact">Contact</a></li>
+                        <li><a href="https://unity3d.com/partners">Partners</a></li>
+            <li><a href="https://unity3d.com/affiliates">Affiliates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="g4 group nest">
+        <div class="g12 newsletter pb0">
+          <form method="post" action="//unity3d.com/newsletters/list" id="newsletter-signup" class="newsletter-signup rel">
+  <div class="fields clear">
+          <p class="lbl">Get Unity news</p>
+        <div class="rel">
+      <div class="field rel clear">
+        <input type="email" name="email" id="email" value="" class="email mb15" placeholder="Enter your email here..." />
+        <input type="submit" value="Sign up" class="btn" />
+      </div>
+      <div class="checkbox clear">
+        <input type="checkbox" id="agree" />
+        <label for="agree">I agree to the <a href="https://unity3d.com/company/legal/privacy-policy" target="_blank">Unity Privacy Policy</a> and the processing and use of my information</label>
+      </div>
+      <div class="loading rel hide">
+        <div class="loading-inline"></div>
+      </div>
+      <div class="success hide">
+        <h4 class="mb5 c-gr">Nearly there...</h4>
+        <p>To start receiving news from Unity Technologies, click on the link we've sent to your e-mail account.</p>
+      </div>
+      <div class="failed hide">
+        <h4 class="mb5 c-re">Oops...</h4>
+        <p>Something went wrong, please try again.</p>
+      </div>
+    </div>
+  </div>
+</form>        </div>
+        <div class="g12 lang pb0">
+          <p class="lbl">Language</p>
+          <div class="language-switcher">
+  <ul id="mobile-lang" class="languages">
+              <li><a href="/cn/unity/whats-new/unity-5.3.4" data-lang="cn" lang="zh-hans" hreflang="zh-hans">中文</a></li>
+                <li><a href="/fr/unity/whats-new/unity-5.3.4" data-lang="fr" lang="fr" hreflang="fr">Français</a></li>
+                <li><a href="/de/unity/whats-new/unity-5.3.4" data-lang="de" lang="de" hreflang="de">Deutsch</a></li>
+                <li><a href="/jp/unity/whats-new/unity-5.3.4" data-lang="jp" lang="ja" hreflang="ja">日本語</a></li>
+                <li><a href="/kr/unity/whats-new/unity-5.3.4" data-lang="kr" lang="ko" hreflang="ko">한국어</a></li>
+                <li><a href="/pt/unity/whats-new/unity-5.3.4" data-lang="pt" lang="pt" hreflang="pt">Português</a></li>
+                <li><a href="/ru/unity/whats-new/unity-5.3.4" data-lang="ru" lang="ru" hreflang="ru">Русский</a></li>
+                <li><a href="/es/unity/whats-new/unity-5.3.4" data-lang="es" lang="es" hreflang="es">Español</a></li>
+      </ul>
+</div>        </div>
+      </div>
+      <div class="g12 partners">
+        <p class="lbl">Partners</p>
+        <div class="partner moolah"><a href="http://www.cloudmoolah.com/" target="_blank"></a></div>
+        <div class="partner facebook"><a href="http://www.facebook.com/" target="_blank"></a></div>
+        <div class="partner google"><a href="https://unity3d.com/partners/google/daydream"></a></div>
+        <div class="partner intel"><a href="https://unity3d.com/partners/intel"></a></div>
+        <div class="partner microsoft"><a href="https://unity3d.com/partners/microsoft"></a></div>
+        <div class="partner nintendo"><a href="http://www.nintendo.com/" target="_blank"></a></div>
+        <div class="partner oculus"><a href="http://www.oculus.com/" target="_blank"></a></div>
+        <div class="partner samsung"><a href="https://unity3d.com/partners/samsung"></a></div>
+        <div class="partner sony"><a href="http://www.sony.com" target="_blank"></a></div>
+        <div class="partner vuforia"><a href="https://developer.vuforia.com" target="_blank"></a></div>
+        <div class="partner xiaomi"><a href="http://www.mi.com/" target="_blank"></a></div>
+      </div>
+      <div class="g12 nest">
+        <div class="g12 pt0 pb0"><div class="bb"></div></div>
+        <div class="g5 right">
+          <div class="social">
+            <a href="http://www.facebook.com/unity3d" class="icon facebook" target="_blank">Facebook</a>
+            <a href="http://www.twitter.com/unity3d" class="icon twitter" target="_blank">Twitter</a>
+            <a href="https://plus.google.com/u/0/104568650392955941577/" class="icon googleplus" target="_blank">Google+</a>
+            <a href="https://www.linkedin.com/company/unity-technologies" class="icon linkedin" target="_blank">LinkedIn</a>
+            <a href="https://www.youtube.com/user/Unity3D" class="icon youtube" target="_blank">YouTube</a>
+          </div>
+        </div>
+        <div class="g7">
+          <small>&copy; 2017 Unity Technologies</small>
+          <ul class="legal">
+            <li><a href="https://unity3d.com/legal">Legal</a></li>
+            <li><a href="https://unity3d.com/legal/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://unity3d.com/legal/cookie-policy#cookies">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</section>    
+  
+        </div>      </div>
+  <div class="cookies-dialog hide">
+    <div class="wrap">
+      <div class="btn mt5">Got it</div>
+      <p class="pt15">We use cookies to ensure that we give you the best experience on our website. Click <a href="//unity3d.com/legal/cookie-policy#cookies" class="cd">here</a> for more information.</p>
+    </div>
+  </div>
+</body>
+</html>
