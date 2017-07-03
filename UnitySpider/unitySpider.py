@@ -8,7 +8,7 @@ SUFFIX = ''
 # 提取文章标题的正则表达式
 REX_TITLE = r'<title>(.*?)</title>'
 # 提取所需链接的正则表达式
-REX_URL = r'unity-\d\.\d.\d|unity-\d\.\d'
+REX_URL = r'unity-\d\.\d.\d|unity-\d\.\d|archive'
 # 种子url，从这个url开始爬取
 BASE_URL = 'https://unity3d.com/unity/whats-new/'
 
